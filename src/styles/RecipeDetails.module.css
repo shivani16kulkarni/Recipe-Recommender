@@ -1,0 +1,75 @@
+.recipe-details-container {
+    background-color: var(--color-beige);
+    padding: 1rem;
+}
+
+.recipe-details {
+    background-color: var(--color-white);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.title {
+    margin: 0.5rem;
+}
+
+.title h2 {
+    font-size: var(--fs-large);
+    line-height: var(--lh-medium);
+    border-bottom: var(--border-b1) solid var(--color-red-600);
+}
+
+.thumbnail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.thumbnail img {
+    width: 25rem;
+    border-radius: 0.5rem;
+}
+
+.ingredients-instructions h4 {
+    font-size: var(--fs-medium);
+    color: var(--color-red-600);
+}
+
+.pills {
+    padding: 0.25rem 1rem;
+    background-color: var(--color-pink);
+    color: var(--color-gray-900);
+    border: none;
+    border-radius: 1.5rem;
+    margin: 0 0.25rem;
+}
+
+.pills-favorites {
+    display: flex;
+    align-items: center;
+}
+
+.btn-favorites {
+    border: none;
+    background: none;
+}
+
+.solid-fill {
+    color: red;
+}
+
+.transparent-fill {
+    color: black;
+}
+
+@media (min-width: 600px) {
+    .thumbnail img {
+        width: 35rem;
+    }
+
+    .ingredients-instructions {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        align-items: start;
+    }
+}

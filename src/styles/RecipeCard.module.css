@@ -1,0 +1,65 @@
+.recipe-card-container {
+  width: 18rem;
+}
+
+.solid-fill {
+  color: red;
+}
+
+.transparent-fill {
+  color: black;
+}
+
+.recipe-card-container {
+  position: relative;
+  padding: 4.5rem 1.5rem 1.5rem;
+}
+
+.card-content {
+  min-height: 16rem;
+  max-width: 24rem;
+  border: var(--border-b1) solid var(--color-pink);
+  background-color: var(--color-pink);
+  border-radius: 1.5rem;
+}
+
+.card-image {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12rem;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+.card-content h4 {
+  margin: 10rem 0 0.5rem;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-favorites {
+  border: none;
+  background: none;
+}
+
+.btn-view {
+  padding: 0.5rem 1.25rem;
+  background-color: var(--color-red-600);
+  color: var(--color-white);
+  border: none;
+  border-radius: 1.5rem;
+  margin: 0 0.25rem;
+}

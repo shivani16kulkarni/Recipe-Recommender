@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+  --font-family: font-family: "Jost", sans-serif;
+
+  --color-gray-900: #333333;
+  --color-gray-700: #505050;
+  --color-gray-600: #757575;
+  --color-gray-300: #DDDDDD;
+  --color-gray-100: #F8F8F8;
+
+  --color-red-600: #C03939;
+  --color-red-500: #EB0000;
+
+  --color-pink: #c0393933;
+  --color-beige: #f5f1e7;
+
+  --color-white: #FFFFFF;
+  --color-transparent: #FFFFFF00;
+
+  --fs-smaller: 0.75rem;
+  --fs-small: 0.9rem;
+  --fs-medium: 1.25rem;
+  --fs-large: 1.8rem;
+  --fs-larger: 2.2rem;
+  --fs-larger: 2.4rem;
+  --fs-largest: 3rem;
+
+  --lh-tight: 1.1rem;
+  --lh-normal: 1.4rem;
+  --lh-relaxed: 1.6rem;
+  --lh-medium: 3.2rem;
+  --lh-large: 4.2rem;
+
+  --fw-bold: 900;
+  --fw-semi-bold: 700;
+  --fw-normal: 400;
+
+  --border-b1: 0.08rem;
+  --border-b2: 0.25rem;
+  --border-b3: 0.2rem;
+
+  --ls-1: 0.1rem;
+  --ls-2: 0.2rem;
+  --ls-3: 0.4rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-size: var(--fs-small);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-normal);
+  background-color: var(--color-white);
+  color: var(--color-gray-900);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--fs-large);
+  color: var(--color-red-500);
+}
+
+.loader {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10001;
+  background-color: var(--color-white);
+  min-width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader img {
+  width: 2.5rem;
+  animation: spin 1000ms linear infinite;
+
+
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+
+}
