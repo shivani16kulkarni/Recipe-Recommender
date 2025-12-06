@@ -30,6 +30,13 @@ function setStorageData(storage) {
   localStorage.setItem('storage', JSON.stringify(storage));
 }
 function getStorageData() {
-  const whatLooks = Array.from(JSON.parse(localStorage.getItem('storage')));
-  return whatLooks;
+  const raw = localStorage.getItem('storage');
+
+  if (!raw) return [];
+
+  const parsed = JSON.parse(raw);
+
+  if (!Array.isArray(parsed)) return [];
+
+  return Array.from(parsed);
 }

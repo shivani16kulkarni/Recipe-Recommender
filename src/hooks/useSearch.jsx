@@ -1,4 +1,4 @@
-import * as RecipeApi from '@apis/recipe';
+import * as RecipeApi from '@apis/Recipe.jsx';
 import { useEffect, useRef, useState } from 'react';
 export default function useSearch(ingredients) {
   const [data, setData] = useState([]);
